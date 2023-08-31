@@ -1,0 +1,45 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterSite.master.cs" Inherits="Friday.MasterSite" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Cricket</title>
+    <link href="StyleSheet1.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 81px;
+        }
+        .auto-style2 {
+            width: 77px;
+        }
+        .auto-style3 {
+            width: 84px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="topPanel">
+            <div>
+                <h1 class="text-center">Cricket</h1>
+            </div>
+            <div>
+            <table>
+                <tr> 
+                    <td class="auto-style1"><asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Register.aspx">Register</asp:HyperLink></td>
+                    <td class="auto-style2"><asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/Home.aspx">Home</asp:HyperLink></td>
+                    <td class="auto-style3"><asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/LogOut.aspx">LogOut</asp:HyperLink></td>
+                </tr>
+            </table>
+            </div>
+        </div>
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
